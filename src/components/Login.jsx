@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Input from "./Input";
 function Login(props) {
-  const [mouse, setMouse] = useState(false);
+  const [isMouse, setMouse] = useState(false);
   const onMouseOverClick = () => {
     setMouse(true);
   };
@@ -17,7 +17,7 @@ function Login(props) {
       )}
       <button
         type="submit"
-        style={{ backgroundColor: mouse ? "black" : "white" }}
+        style={{ backgroundColor: isMouse ? "black" : "white" }}
         onMouseOver={onMouseOverClick}
         onMouseOut={onMouseOutClick}
       >
